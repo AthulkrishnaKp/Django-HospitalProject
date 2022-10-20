@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+
+{% block title %} 
+   About
+{% endblock %}
+
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 300px ;" src="{% static '/images/d1.jpg' %}" class=" d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 300px ;" src="{% static '/images/d2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 300px ;" src="{% static '/images/d3.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 300px ;" src="{% static '/images/d4.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 300px ;" src="{% static '/images/d5.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 300px ;" src="{% static '/images/d6.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="col"></div>
+    <div class="text-center col">
+        <h1 class="mt-5">Changing Lives With Care & Love</h1>
+        <hr>
+        <p class="text-center fs-5 fw-italic" >We follow process driven quality systems that adhere to international standards of clinical care, safe
+            environment, infection control and respect for patient rights & privacy. With state of the art
+            multi-disciplinary capabilities and world-class infrastructure and technology, we enrich the quality of life
+            of every patient in a caring and nurturing environment and greatest respect for human dignity and life.
+            We are thankful to you all and The ALMIGHTY for helping us to open Hayath Hospital for this Society. We are
+            sure the future will throw open new avenues, possibilities and challenges and with your help, support,
+            advice and with the Blessings of Almighty we will strive forward to achieve our motto, which is “excellence
+            through advancements in healthcare”</p>
+    </div>
+    <div class="col"></div>
+</div>
+{% endblock %}
